@@ -16,17 +16,6 @@ function pvr_register_settings() {
 	$pvr_settings = array(
 		/* General Settings */
 		'general' => array(
-			// TODO Need checkbox?
-			/*
-			'enable_meta_tag' => array(
-				'id' => 'enable_meta_tag',
-				'name' => __( 'Enable Verification', 'pvr' ),
-				'desc' => __( 'Output Pinterest verification meta tag in the ', 'pvr' ) .
-					'<code>' . htmlspecialchars('<head>') . '</code>' .
-					__( 'section of your front page.', 'pvr' ),
-				'type' => 'checkbox'
-			),
-			*/
 			'verification_code' => array(
 				'id' => 'verification_code',
 				'name' => __( 'Pinterest Verification Code', 'pvr' ),
@@ -98,25 +87,10 @@ function pvr_text_callback( $args ) {
 
 	$size = ( isset( $args['size'] ) && ! is_null( $args['size'] ) ) ? $args['size'] : 'regular';
 	$html = '<input type="text" class="' . $size . '-text" id="pvr_settings_' . $args['section'] . '[' . $args['id'] . ']" name="pvr_settings_' . $args['section'] . '[' . $args['id'] . ']" value="' . esc_attr( $value ) . '"/>';
-	//$html .= '<label for="pvr_settings_' . $args['section'] . '[' . $args['id'] . ']"> ' . $args['desc'] . '</label>';
 
 	// Render and style description text underneath textarea if it exists.
 	if ( ! empty( $args['desc'] ) )
 		$html .= '<p class="description">' . $args['desc'] . '</p>';
-
-	echo $html;
-}
-
-/*
- * Single checkbox callback function
- * TODO Need this?
- */
-function pvr_checkbox_callback( $args ) {
-	global $pvr_options;
-
-	$checked = isset( $pvr_options[$args['id']] ) ? checked( 1, $pvr_options[$args['id']], false ) : '';
-	$html = '<input type="checkbox" id="pvr_settings_' . $args['section'] . '[' . $args['id'] . ']" name="pvr_settings_' . $args['section'] . '[' . $args['id'] . ']" value="1" ' . $checked . '/>';
-	$html .= '<label for="pvr_settings_' . $args['section'] . '[' . $args['id'] . ']"> ' . $args['desc'] . '</label>';
 
 	echo $html;
 }
