@@ -15,6 +15,8 @@ This plugin allows you to verify your website with Pinterest by inserting a meta
 
 It simply outputs the verification meta tag for Pinterest to recognize your website as instructed at http://business.pinterest.com/verify/.
 
+Now pinners will see the verification checkmark AND grant you access to Pinterest's free analytics!
+
 That's all there is to it!
 
 == Installation ==
