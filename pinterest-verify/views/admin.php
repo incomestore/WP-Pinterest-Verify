@@ -44,7 +44,23 @@ if ( ! defined( 'ABSPATH' ) )
 				?>
 			</form>
 
-			<h3>Screenshots & Instructions Coming Soon!</h3>
+			<h3><?php _e( 'Step by Step Verification Instructions', 'pvr' ); ?></h3>
+
+			<p>
+				1. Complete steps 1 and 2 of <a href="http://business.pinterest.com/verify/" target="_blank">Pinterest's Verify Your Website Instructions</a>.
+			</p>
+			<p>
+				2. For the next step, click the <strong>Verify with a Meta Tag</strong> link.<br/>
+				<img src="../assets/pinterest-verify-1.png" />
+				<img src="<?php echo plugins_url( 'assets/pinterest-verify-1.png', __FILE__ ); ?>" />
+			</p>
+			<p>
+				3. Now select the 32-character unique code within the quotes in <code>content=""</code> and copy.<br/>
+				<img src="../assets/pinterest-verify-2.png" />
+			</p>
+			<p>
+				4. Finally, paste this 32-character code into the textbox above and click Save Changes.
+			</p>
 
 		</div><!-- #pvr-settings-content -->
 
