@@ -49,7 +49,7 @@ if ( ! defined( 'ABSPATH' ) )
 		</div><!-- #pvr-settings-content -->
 
 		<div id="pvr-settings-sidebar">
-			<?php //include( 'admin-sidebar.php' ); ?>
+			<?php include( 'admin-sidebar.php' ); ?>
 		</div>
 	</div>
 
