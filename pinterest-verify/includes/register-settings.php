@@ -116,5 +116,6 @@ function pvr_missing_callback( $args ) {
 function pvr_get_settings() {
 	$general_settings =	is_array( get_option( 'pvr_settings_general' ) ) ? get_option( 'pvr_settings_general' )  : array();
 
-	return array_merge( $general_settings );
+	return $general_settings;
+	//return array_merge( $general_settings );
 }
