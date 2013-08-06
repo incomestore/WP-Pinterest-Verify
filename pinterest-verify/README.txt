@@ -23,7 +23,7 @@ That's all there is to it!
 
 **Finding and installing through the WordPress admin:**
 
-1. If searching for this plugin in your WordPress admin, search for "Pinterest verify".
+1. If searching for this plugin in your WordPress admin, under Plugins > Add New search for "Pinterest verify".
 1. Find the plugin that's labeled **Pinterest Verify**.
 1. Also look for the author name **Phil Derksen**.
 1. Click "Install Now", then Activate, then head to Settings > Pinterest Verify.
