@@ -50,11 +50,11 @@ if ( ! defined( 'ABSPATH' ) )
 
 			<p>
 				<?php _e( '1. Go to Pinterest\'s', 'pvr' ); ?>
-				<a href="http://business.pinterest.com/verify/" target="_blank"><?php _e( 'Verify Your Website', 'pvr' ); ?></a>
+				<strong><a href="http://business.pinterest.com/verify/" target="_blank"><?php _e( 'Verify Your Website', 'pvr' ); ?></a></strong>
 				<?php _e( 'and complete steps 1 and 2.', 'pvr' ); ?>
 			</p>
 			<p>
-				<?php _e( '2. Next click the <strong>Verify with a meta tag</strong>.', 'pvr' ); ?><br/>
+				<?php _e( '2. Next click <strong>Verify with a meta tag</strong> at the bottom of this popup.', 'pvr' ); ?><br/>
 				<img class="pvr-screenshot" src="<?php echo PVR_PLUGIN_URL . 'assets/pinterest-verify-1.png'; ?>" />
 			</p>
 			<p>
@@ -62,7 +62,10 @@ if ( ! defined( 'ABSPATH' ) )
 				<img class="pvr-screenshot" src="<?php echo PVR_PLUGIN_URL . 'assets/pinterest-verify-2.png'; ?>" />
 			</p>
 			<p>
-				<?php _e( '4. Finally, paste this 32-character code into the textbox above and click Save Changes.', 'pvr' ); ?>
+				<?php _e( '4. Come back to this settings page and paste the 32-character code into the textbox above, then click <strong>Save Changes</strong>.', 'pvr' ); ?>
+			</p>
+			<p>
+				<?php _e( '5. Finally, go back to Pinterest and click <strong>Complete Verification</strong>. That should be it!', 'pvr' ); ?>
 			</p>
 
 		</div><!-- #pvr-settings-content -->

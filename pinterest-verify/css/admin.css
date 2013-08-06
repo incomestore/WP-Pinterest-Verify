@@ -26,8 +26,9 @@
 	width: 290px;
 }
 
-#pvr-settings .screenshot {
+#pvr-settings .pvr-screenshot {
 	border: 1px solid #ccc;
+	margin: 15px 0;
 }
 
 #pvr-settings-sidebar {
