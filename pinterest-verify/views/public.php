@@ -22,7 +22,7 @@ function pvr_render_meta_tag() {
 
 	$ver_code = ( isset( $pvr_options['verification_code'] ) ? $pvr_options['verification_code'] : '' );
 
-	// Output only on front page (root of site).
+	// Output only on front page of site.
 	if ( is_front_page() && ( $ver_code != '' ) )
 		echo '<meta name="p:domain_verify" content="' . htmlspecialchars( $ver_code ) . '"/>' . "\n";
 
