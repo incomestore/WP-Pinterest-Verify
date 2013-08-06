@@ -147,7 +147,7 @@ class Pinterest_Verify {
 	 *
 	 * @since     1.0.0
 	 */
-	private function includes() {
+	public function includes() {
 		// Load global options.
 		global $pvr_options;
 
