@@ -58,8 +58,11 @@ class Pinterest_Verify {
 	 * @since     1.0.0
 	 */
 	private function __construct() {
+		// Setup constants.
+		$this->setup_constants();
+
 		// Include required files.
-		$this->includes();
+		add_action( 'init', array( $this, 'includes' ), 1 );
 
 		// Add the options page and menu item.
 		add_action( 'admin_menu', array( $this, 'add_plugin_admin_menu' ), 2 );
@@ -89,6 +92,17 @@ class Pinterest_Verify {
 		}
 
 		return self::$instance;
+	}
+
+	/**
+	 * Setup plugin constants.
+	 *
+	 * @since     1.0.0
+	 */
+	private function setup_constants() {
+		// Plugin Folder URL.
+		if ( ! defined( 'PVR_PLUGIN_URL' ) )
+			define( 'PVR_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 	}
 
 	/**
