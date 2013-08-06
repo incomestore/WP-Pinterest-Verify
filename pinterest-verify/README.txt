@@ -41,7 +41,8 @@ See the plugin settings page for further instructions.
 
 == Screenshots ==
 
-To Do...
+1. Settings page. Just a single textbox.
+2. Sample HTML source meta tag output on public front page.
 
 == Changelog ==
 
