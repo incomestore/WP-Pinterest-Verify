@@ -26,6 +26,10 @@
 	width: 290px;
 }
 
+#pvr-settings .screenshot {
+	border: 1px solid #ccc;
+}
+
 #pvr-settings-sidebar {
 	font-family: "Lato", sans-serif; /* Base font from Flat UI body tag. */
 }

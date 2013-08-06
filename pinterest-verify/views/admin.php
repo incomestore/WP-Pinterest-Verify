@@ -31,7 +31,7 @@ if ( ! defined( 'ABSPATH' ) )
 				<?php _e( 'If you have any caching plugins or options running make sure those are cleared before verifying.', 'pvr' ); ?>
 			</p>
 			<p>
-				<?php _e( 'You should now be able to verify your site with Pinterest.', 'pvr' ); ?>
+				<?php _e( 'At this point you should now be able to verify your site with Pinterest.', 'pvr' ); ?>
 			</p>
 
 			<form method="post" action="options.php">
@@ -46,20 +46,23 @@ if ( ! defined( 'ABSPATH' ) )
 
 			<h3><?php _e( 'Step by Step Verification Instructions', 'pvr' ); ?></h3>
 
+			<!-- TODO localize, add image borders -->
+
 			<p>
-				1. Complete steps 1 and 2 of <a href="http://business.pinterest.com/verify/" target="_blank">Pinterest's Verify Your Website Instructions</a>.
+				<?php _e( '1. Go to Pinterest\'s', 'pvr' ); ?>
+				<a href="http://business.pinterest.com/verify/" target="_blank"><?php _e( 'Verify Your Website', 'pvr' ); ?></a>
+				<?php _e( 'and complete steps 1 and 2.', 'pvr' ); ?>
 			</p>
 			<p>
-				2. For the next step, click the <strong>Verify with a Meta Tag</strong> link.<br/>
-				<img src="../assets/pinterest-verify-1.png" />
-				<img src="<?php echo plugins_url( 'assets/pinterest-verify-1.png', __FILE__ ); ?>" />
+				<?php _e( '2. Next click the <strong>Verify with a meta tag</strong>.', 'pvr' ); ?><br/>
+				<img class="pvr-screenshot" src="<?php echo PVR_PLUGIN_URL . 'assets/pinterest-verify-1.png'; ?>" />
 			</p>
 			<p>
-				3. Now select the 32-character unique code within the quotes in <code>content=""</code> and copy.<br/>
-				<img src="../assets/pinterest-verify-2.png" />
+				<?php _e( '3. Now select the 32-character unique code within the quotes in <code>content=""</code> and copy.', 'pvr' ); ?><br/>
+				<img class="pvr-screenshot" src="<?php echo PVR_PLUGIN_URL . 'assets/pinterest-verify-2.png'; ?>" />
 			</p>
 			<p>
-				4. Finally, paste this 32-character code into the textbox above and click Save Changes.
+				<?php _e( '4. Finally, paste this 32-character code into the textbox above and click Save Changes.', 'pvr' ); ?>
 			</p>
 
 		</div><!-- #pvr-settings-content -->
