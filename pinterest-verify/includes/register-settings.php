@@ -51,19 +51,7 @@ function pvr_register_settings() {
 			function_exists( 'pvr_' . $option['type'] . '_callback' ) ? 'pvr_' . $option['type'] . '_callback' : 'pvr_missing_callback',
 			'pvr_settings_general',
 			'pvr_settings_general',
-			array(
-				'id' => $option['id'],
-				'desc' => $option['desc'],
-				'name' => $option['name'],
-				'section' => 'general',
-				'size' => isset( $option['size'] ) ? $option['size'] : null,
-				'options' => isset( $option['options'] ) ? $option['options'] : '',
-				'std' => isset( $option['std'] ) ? $option['std'] : '',
-
-				// Link label to input if text, select, textarea, etc.
-				// TODO 'label_for' => 'pvr_settings_general[' . $option['id'] . ']'
-				'label_for' => ( in_array( $option['type'], array( 'text', 'select', 'textarea' ) ) ) ? 'pvr_settings_general[' . $option['id'] . ']' : ''
-			)
+			pvr_get_settings_field_args( $option, 'general' )
 		);
 	}
 
@@ -72,6 +60,26 @@ function pvr_register_settings() {
 
 }
 add_action( 'admin_init', 'pvr_register_settings' );
+
+/*
+ * Generic add_settings_field $args parameter array.
+ */
+function pvr_get_settings_field_args( $option, $section ) {
+	$settings_args = array(
+		'id' => $option['id'],
+		'desc' => $option['desc'],
+		'name' => $option['name'],
+		'section' => $section,
+		'size' => isset( $option['size'] ) ? $option['size'] : null,
+		'options' => isset( $option['options'] ) ? $option['options'] : '',
+		'std' => isset( $option['std'] ) ? $option['std'] : '',
+
+		// Link label to input using 'label_for' argument if text, textarea, password, select, or variations.
+		'label_for' => ( in_array( $option['type'], array( 'text', 'select', 'textarea', 'password' ) ) ) ? 'pvr_settings_general[' . $option['id'] . ']' : ''
+	);
+
+	return $settings_args;
+}
 
 
 /*
