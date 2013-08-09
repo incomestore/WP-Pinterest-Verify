@@ -64,7 +64,7 @@ add_action( 'admin_init', 'pvr_register_settings' );
 /*
  * Return generic add_settings_field $args parameter array.
  *
- * @since     2.0.0
+ * @since     1.0.0
  *
  * @param   string  $option   Single settings option key.
  * @param   string  $section  Section of settings apge.
