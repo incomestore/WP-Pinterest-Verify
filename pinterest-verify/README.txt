@@ -2,7 +2,7 @@
 Contributors: pderksen
 Tags: pinterest, pinterest verify, pinterest verification, meta tag, verify, verification
 Requires at least: 3.4.2
-Tested up to: 3.6
+Tested up to: 3.6.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
