@@ -1,8 +1,8 @@
 === Pinterest Verify ===
 Contributors: pderksen
 Tags: pinterest, pinterest verify, pinterest verification, meta tag, verify, verification
-Requires at least: 3.4.2
-Tested up to: 3.7.1
+Requires at least: 3.5.2
+Tested up to: 3.8
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -23,17 +23,29 @@ That's all there is to it!
 
 == Installation ==
 
-**Finding and installing through the WordPress admin:**
+= 1. Admin Search =
+1. In your Admin, go to menu Plugins > Add.
+1. Search for `Pinterest Verify`.
+1. Find the plugin that's labeled `Pinterest Verify`.
+1. Look for the author name `Phil Derksen` on the plugin.
+1. Click to install.
+1. Activate the plugin.
+1. A new menu item `Pinterest Verify` will appear under your Settings menu option.
 
-1. If searching for this plugin in your WordPress admin, under Plugins > Add New search for "Pinterest verify".
-1. Find the plugin that's labeled **Pinterest Verify**.
-1. Also look for the author name **Phil Derksen**.
-1. Click "Install Now", then Activate, then head to Settings > Pinterest Verify.
+= 2. Download & Upload =
+1. Download the plugin (a zip file) on the right column of this page.
+1. In your Admin, go to menu Plugins > Add.
+1. Select the tab "Upload".
+1. Upload the .zip file you just downloaded.
+1. Activate the plugin.
+1. A new menu item `Pinterest Verify` will appear under your Settings menu option.
 
-**Alternative installation methods:**
-
-* Download this plugin, then upload through the WordPress admin (Plugins > Add New > Upload)
-* Download this plugin, unzip the contents, then FTP upload to the `/wp-content/plugins/` directory
+= 3. FTP Upload =
+1. Download the plugin (.zip file) on the right column of this page.
+1. Unzip the zip file contents.
+1. Upload the `pinterest-verify` folder to the `/wp-content/plugins/` directory of your site.
+1. Activate the plugin through the 'Plugins' menu in WordPress.
+1. A new menu item `Pinterest Verify` will appear under your Settings menu option.
 
 == Frequently Asked Questions ==
 
@@ -50,5 +62,10 @@ See the plugin settings page for further instructions.
 
 == Changelog ==
 
+= 1.0.1 =
+
+* Tested up to WordPress 3.8.
+
 = 1.0.0 =
+
 * Initial release.
