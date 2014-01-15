@@ -109,10 +109,8 @@ class Pinterest_Verify {
 	 * Fired when the plugin is activated.
 	 *
 	 * @since    1.0.0
-	 *
-	 * @param    boolean    $network_wide    True if WPMU superadmin uses "Network Activate" action, false if WPMU is disabled or plugin is activated on an individual blog.
 	 */
-	public static function activate( $network_wide ) {
+	public static function activate() {
 		// Add value to indicate that we should show admin install notice.
 		update_option( 'pvr_show_admin_install_notice', 1 );
 	}
@@ -240,11 +238,15 @@ class Pinterest_Verify {
 		if ( false == get_option( 'pvr_show_admin_install_notice' ) )
 			return;
 
-		// At this point show install notice.
-		include_once( 'views/admin-install-notice.php' );
+		// Delete stored value if "hide" button click detected (custom querystring value set to 1).
+		// or if on a PIB admin page. Then exit.
+		if ( ! empty( $_REQUEST['pvr-dismiss-install-nag'] ) || $this->viewing_this_plugin() ) {
+			delete_option( 'pvr_show_admin_install_notice' );
+			return;
+		}
 
-		// Delete stored value to hide since we only want them to view it once.
-		delete_option( 'pvr_show_admin_install_notice' );
-		return;
+		// At this point show install notice. Show it only on the plugin screen.
+		if( get_current_screen()->id == 'plugins' )
+			include_once( 'views/admin-install-notice.php' );
 	}
 }

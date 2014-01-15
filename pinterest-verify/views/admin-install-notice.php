@@ -25,5 +25,6 @@ if ( ! defined( 'ABSPATH' ) )
 	<p>
 		<?php echo $this->get_plugin_title() . __( ' is now installed.', 'pvr' ); ?>
 		<a href="<?php echo add_query_arg( 'page', $this->plugin_slug, admin_url( 'admin.php' ) ); ?>" class="button-primary"><?php _e( 'Setup Pinterest Verification Now', 'pvr' ); ?></a>
+		<a href="<?php echo add_query_arg( 'pvr-dismiss-install-nag', 1 ); ?>" class="button-secondary"><?php _e( 'Hide this', 'pvr' ); ?></a>
 	</p>
 </div>
