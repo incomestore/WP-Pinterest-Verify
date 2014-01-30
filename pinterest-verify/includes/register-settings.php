@@ -12,6 +12,11 @@
 if ( ! defined( 'ABSPATH' ) )
 	exit;
 
+/*
+ * Register all of the plugin settings
+ * 
+ * @since 1.0.0
+ */
 function pvr_register_settings() {
 	$pvr_settings = array(
 		/* General Settings */
@@ -92,6 +97,8 @@ function pvr_get_settings_field_args( $option, $section ) {
 
 /*
  * Text Callback
+ * 
+ * @since 1.0.0
  */
 function pvr_text_callback( $args ) {
 	global $pvr_options;
@@ -113,6 +120,8 @@ function pvr_text_callback( $args ) {
 
 /*
  * Function we can use to sanitize the input data and return it when saving options
+ * 
+ * @since 1.0.0
  */
 function pvr_settings_sanitize( $input ) {
 	add_settings_error( 'pvr-notices', '', __( 'Settings Updated', 'pvr' ), 'updated' );
@@ -121,6 +130,8 @@ function pvr_settings_sanitize( $input ) {
 
 /*
  *  Default callback function if correct one does not exist
+ * 
+ * @since 1.0.0
  */
 function pvr_missing_callback( $args ) {
 	printf( __( 'The callback function used for the <strong>%s</strong> setting is missing.', 'pvr' ), $args['id'] );
@@ -128,6 +139,8 @@ function pvr_missing_callback( $args ) {
 
 /*
  * Function used to return an array of all of the plugin settings
+ * 
+ * @since 1.0.0
  */
 function pvr_get_settings() {
 	$general_settings =	is_array( get_option( 'pvr_settings_general' ) ) ? get_option( 'pvr_settings_general' )  : array();
