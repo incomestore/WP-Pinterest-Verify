@@ -43,3 +43,4 @@ Thumbs.db
 
 # MS Sync Toy dat file *
 SyncToy*.dat
+/pinterest-verify/nbproject/*
