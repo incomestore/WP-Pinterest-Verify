@@ -75,6 +75,25 @@ class Pinterest_Verify {
 
 		// Add plugin listing "Settings" action link.
 		add_filter( 'plugin_action_links_' . plugin_basename( plugin_dir_path( __FILE__ ) . $this->plugin_slug . '.php' ), array( $this, 'settings_link' ) );
+		
+		// Check WP version
+		add_action( 'admin_init', array( $this, 'check_wp_version' ) );
+	}
+	
+	/**
+	 * Make sure user has the minimum required version of WordPress installed to use the plugin
+	 * 
+	 * @since 1.0.0
+	 */
+	public function check_wp_version() {
+		global $wp_version;
+		$required_wp_version = '3.5.2';
+		
+		if ( version_compare( $wp_version, $required_wp_version, '<' ) ) {
+			deactivate_plugins( PVR_MAIN_FILE ); 
+			wp_die( sprintf( __( $this->get_plugin_title() . ' requires WordPress version <strong>' . $required_wp_version . '</strong> to run properly. ' .
+				'Please update WordPress before reactivating this plugin. <a href="%s">Return to Plugins</a>.', 'pvr' ), get_admin_url( '', 'plugins.php' ) ) );
+		}
 	}
 
 	/**

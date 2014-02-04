@@ -35,3 +35,6 @@ register_activation_hook( __FILE__, array( 'Pinterest_Verify', 'activate' ) );
 
 // Get class instance
 Pinterest_Verify::get_instance();
+
+define( 'PVR_MAIN_FILE', __FILE__ );
+
