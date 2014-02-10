@@ -20,7 +20,7 @@ class Pinterest_Verify {
 	 *
 	 * @var     string
 	 */
-	protected $version = '1.0.0';
+	protected $version = '1.0.2';
 
 	/**
 	 * Unique identifier for your plugin.
@@ -173,6 +173,9 @@ class Pinterest_Verify {
 
 		// Load global options settings.
 		$pvr_options = pvr_get_settings();
+		
+		// Include our misc functions we may need
+		include_once( 'includes/misc-functions.php' );
 
 		// Frontend-only includes.
 		if ( ! is_admin() )
