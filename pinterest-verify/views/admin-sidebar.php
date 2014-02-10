@@ -13,6 +13,7 @@ if ( ! defined( 'ABSPATH' ) )
 	exit;
 ?>
 
+<?php if( ! pvr_is_pib_active() ) { ?>
 <div class="sidebar-container">
 	<h3 class="sidebar-title-large"><?php _e( 'Need more Pinterest traffic?', 'pvr' ); ?></h3>
 
@@ -32,6 +33,7 @@ if ( ! defined( 'ABSPATH' ) )
 		</p>
 	</div>
 </div>
+<?php } ?>
 
 <div class="sidebar-container">
 	<div class="sidebar-content">
