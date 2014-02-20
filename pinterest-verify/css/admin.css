@@ -1,13 +1,5 @@
 /* This stylesheet is used to style the admin option form of the plugin. */
 
-#icon-pinterest-32 {
-	background: transparent url('../assets/pinterest-icon-32.png') no-repeat;
-}
-
-/* This icon is taken from the Flat Social Media Icons fromk Designmodo at
- * http://designmodo.com/flat-social-icons/
- */
-
 /* Layout the page similar to the built-in post edit screen. */
 
 #pvr-settings {
