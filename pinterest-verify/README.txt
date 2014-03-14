@@ -64,7 +64,6 @@ See the plugin settings page for further instructions.
 
 = 1.0.2 =
 
-* Updates to the admin sidebar
 * Tested up to WordPress 3.9.
 
 = 1.0.1 =
