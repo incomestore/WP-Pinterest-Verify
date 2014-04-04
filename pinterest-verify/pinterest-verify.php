@@ -22,8 +22,9 @@
  */
 
 // Exit if accessed directly.
-if ( ! defined( 'ABSPATH' ) )
+if ( ! defined( 'ABSPATH' ) ) {
 	exit;
+}
 
 if ( ! defined( 'PVR_MAIN_FILE' ) ) {
 	define( 'PVR_MAIN_FILE', __FILE__ );
