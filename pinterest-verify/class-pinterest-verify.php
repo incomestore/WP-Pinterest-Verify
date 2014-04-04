@@ -120,8 +120,13 @@ class Pinterest_Verify {
 	 */
 	private function setup_constants() {
 		// Plugin Folder URL.
-		if ( ! defined( 'PVR_PLUGIN_URL' ) )
+		if ( ! defined( 'PVR_PLUGIN_URL' ) ) {
 			define( 'PVR_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+		}
+		
+		if( ! defined( 'PINPLUGIN_BASE_URL' ) ) {
+			define( 'PINPLUGIN_BASE_URL', 'http://pinplugins.com/' );
+		}
 	}
 
 	/**
