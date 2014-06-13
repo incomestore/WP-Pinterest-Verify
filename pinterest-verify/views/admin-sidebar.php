@@ -28,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				'tab'  => 'search',
 				'type' => 'term',
 				's'    => urlencode('"pinterest pin it button"')
-			), admin_url( 'plugin-install.php' ) ); ?>" class="btn btn-small btn-block btn-danger">
+			), admin_url( 'plugin-install.php' ) ); ?>" class="button-primary">
 				<?php _e( 'Get the Free "Pin It" Button plugin', 'pvr' ); ?></a><br/>
 			<a href="http://wordpress.org/plugins/pinterest-pin-it-button/" target="_blank"><?php _e( 'Visit the "Pin It" Button plugin page', 'pvr' ); ?></a>
 		</p>
@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php _e( "Help us get noticed (and boost our egos) with a rating and short review.", 'pvr' ); ?>
 		</p>
 
-		<a href="http://wordpress.org/support/view/plugin-reviews/pinterest-verify" target="_blank">
+		<a href="http://wordpress.org/support/view/plugin-reviews/pinterest-verify" target="_blank" class="button-primary">
 			<?php _e( 'Rate this plugin on WordPress.org', 'pvr' ); ?></a>
 	</div>
 </div>
