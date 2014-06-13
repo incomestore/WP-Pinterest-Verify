@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php _e( "Help us get noticed (and boost our egos) with a rating and short review.", 'pvr' ); ?>
 		</p>
 
-		<a href="http://wordpress.org/support/view/plugin-reviews/pinterest-verify" class="btn btn-small btn-block btn-inverse" target="_blank">
+		<a href="http://wordpress.org/support/view/plugin-reviews/pinterest-verify" target="_blank">
 			<?php _e( 'Rate this plugin on WordPress.org', 'pvr' ); ?></a>
 	</div>
 </div>
