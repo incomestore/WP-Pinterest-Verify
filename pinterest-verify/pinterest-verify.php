@@ -13,7 +13,7 @@
  * Plugin Name: Pinterest Verify
  * Plugin URI: http://pinplugins.com/pinterest-website-verification/
  * Description: Verify your website with Pinterest by inserting a meta tag on your front page (no coding required).
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Phil Derksen
  * Author URI: http://philderksen.com
  * License: GPL-2.0+

@@ -1,8 +1,8 @@
 === Pinterest Verify ===
-Contributors: pderksen
+Contributors: pderksen, nickyoung87
 Tags: pinterest, pinterest verify, pinterest verification, meta tag, verify, verification
 Requires at least: 3.6.1
-Tested up to: 3.9
+Tested up to: 4.0
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -61,6 +61,10 @@ See the plugin settings page for further instructions.
 2. Sample HTML source meta tag output on public front page.
 
 == Changelog ==
+
+= 1.0.3 =
+
+* Tested up to WordPress 4.0
 
 = 1.0.2 =
 
