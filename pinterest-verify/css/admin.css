@@ -13,57 +13,32 @@
 
 #pvr-settings-sidebar {
 	float: right;
-	margin-top: 9px;
 	margin-right: -310px;
 	width: 290px;
 }
 
+#pvr-settings-sidebar .centered {
+	text-align: center;
+}
+
+#pvr-settings-sidebar .button-large {
+	font-size: 17px;
+	line-height: 30px;
+	height: 32px;
+}
+
+#pvr-settings-sidebar .last-blurb {
+	font-size: 17px;
+}
+
+/* postbox overrides */
+#pvr-settings-sidebar .sidebar-container .postbox .inside,
+#pvr-settings-sidebar .sidebar-container .postbox .inside ul {
+	margin-bottom: 0;
+}
+
+/* Screenshots */
 #pvr-settings .pvr-screenshot {
 	border: 1px solid #ccc;
 	margin: 15px 0;
-}
-
-#pvr-settings-sidebar {
-	font-family: "Lato", sans-serif; /* Base font from Flat UI body tag. */
-}
-
-/* Sidebar container. Taken from Flat UI .tile & popover classes. */
-
-#pvr-settings-sidebar .sidebar-container {
-	background-color: #edeff1;
-	border-radius: 6px;
-	font-size: 15px;
-	margin-bottom: 18px;
-	padding: 0;
-	position: relative;
-	text-align: left;
-}
-
-#pvr-settings-sidebar .sidebar-title-large {
-	background-color: #bcc3ca;
-	border-bottom: 1px solid #ebebeb;
-	color: #ffffff;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 18px;
-	margin: 0;
-	padding: 10px 20px 11px;
-	text-align: center;
-	-webkit-border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
-	border-radius: 5px 5px 0 0;
-}
-
-#pvr-settings-sidebar .sidebar-content {
-	padding: 14px;
-}
-
-#pvr-settings-sidebar .sidebar-content p {
-	line-height: 1.4em;
-	margin: 0 0 10px;
-	text-align: center;
-}
-
-#pvr-settings-sidebar .sidebar-content p.small-text {
-	font-size: 13px;
 }
