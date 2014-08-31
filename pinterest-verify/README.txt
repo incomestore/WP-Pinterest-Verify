@@ -64,7 +64,7 @@ See the plugin settings page for further instructions.
 
 = 1.0.3 =
 
-* Tested up to WordPress 4.0
+* Tested up to WordPress 4.0.
 
 = 1.0.2 =
 
