@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pinterest Verify\n"
-"POT-Creation-Date: 2014-10-26 11:35-0700\n"
-"PO-Revision-Date: 2014-10-26 11:35-0700\n"
+"POT-Creation-Date: 2014-10-26 16:05-0700\n"
+"PO-Revision-Date: 2014-10-26 16:05-0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -12,23 +12,32 @@ msgstr ""
 "X-Generator: Poedit 1.6.4\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
 "X-Poedit-SearchPath-0: pinterest-verify\n"
 
-#: pinterest-verify/class-pinterest-verify.php:98
-msgid " requires WordPress version <strong>"
+#: pinterest-verify/class-pinterest-verify.php:95
+msgid "Return to Plugins"
 msgstr ""
 
-#: pinterest-verify/class-pinterest-verify.php:154
-msgid " Settings"
+#. translators: %3$s is a link back to the plugins page
+#: pinterest-verify/class-pinterest-verify.php:101
+#, php-format
+msgid ""
+"%1$s requires WordPress version %2$s to run properly. Please update "
+"WordPress before reactivating this plugin. %3$s"
 msgstr ""
 
-#: pinterest-verify/class-pinterest-verify.php:155
-#: pinterest-verify/class-pinterest-verify.php:202
+#: pinterest-verify/class-pinterest-verify.php:157
+#, php-format
+msgid "%1$s Settings"
+msgstr ""
+
+#: pinterest-verify/class-pinterest-verify.php:158
+#: pinterest-verify/class-pinterest-verify.php:205
 msgid "Pinterest Verify"
 msgstr ""
 
-#: pinterest-verify/class-pinterest-verify.php:230
+#: pinterest-verify/class-pinterest-verify.php:233
 msgid "Settings"
 msgstr ""
 
@@ -41,22 +50,19 @@ msgid "Pinterest Verification Code"
 msgstr ""
 
 #: pinterest-verify/includes/register-settings.php:28
+#, php-format
 msgid ""
 "This is your website's unique 32-character code. It is the code shown within "
+"%1$s inside the meta tag given to you."
 msgstr ""
 
-#: pinterest-verify/includes/register-settings.php:30
-msgid " inside the meta tag given to you."
-msgstr ""
-
-#: pinterest-verify/includes/register-settings.php:128
+#: pinterest-verify/includes/register-settings.php:126
 msgid "Settings Updated"
 msgstr ""
 
-#: pinterest-verify/includes/register-settings.php:138
+#: pinterest-verify/includes/register-settings.php:136
 #, php-format
-msgid ""
-"The callback function used for the <strong>%s</strong> setting is missing."
+msgid "The callback function used for the %1$s setting is missing."
 msgstr ""
 
 #: pinterest-verify/views/admin-install-notice.php:27
@@ -152,38 +158,47 @@ msgstr ""
 msgid "Step by Step Verification Instructions"
 msgstr ""
 
-#: pinterest-verify/views/admin.php:51
-msgid "1. Go to Pinterest's"
-msgstr ""
-
 #: pinterest-verify/views/admin.php:52
-msgid "Verify Your Website"
+#, php-format
+msgid "1. Go to Pinterest's %1$s and complete steps 1 and 2."
 msgstr ""
 
 #: pinterest-verify/views/admin.php:53
-msgid "and complete steps 1 and 2."
+msgid "Verify Your Website"
 msgstr ""
 
-#: pinterest-verify/views/admin.php:56
+#: pinterest-verify/views/admin.php:58
+#, php-format
+msgid "2. Next click %1$s at the bottom of this popup."
+msgstr ""
+
+#: pinterest-verify/views/admin.php:58
+msgid "Verify with a meta tag"
+msgstr ""
+
+#: pinterest-verify/views/admin.php:65
+#, php-format
 msgid ""
-"2. Next click <strong>Verify with a meta tag</strong> at the bottom of this "
-"popup."
+"3. Now select the 32-character unique code within the quotes in %1$s and "
+"copy."
 msgstr ""
 
-#: pinterest-verify/views/admin.php:60
-msgid ""
-"3. Now select the 32-character unique code within the quotes in "
-"<code>content=\"\"</code> and copy."
-msgstr ""
-
-#: pinterest-verify/views/admin.php:64
+#: pinterest-verify/views/admin.php:72
+#, php-format
 msgid ""
 "4. Come back to this settings page and paste the 32-character code into the "
-"textbox above, then click <strong>Save Changes</strong>."
+"textbox above, then click %1$s."
 msgstr ""
 
-#: pinterest-verify/views/admin.php:67
-msgid ""
-"5. Finally, go back to Pinterest and click <strong>Complete Verification</"
-"strong>. That should be it!"
+#: pinterest-verify/views/admin.php:73
+msgid "Save Changes"
+msgstr ""
+
+#: pinterest-verify/views/admin.php:78
+#, php-format
+msgid "5. Finally, go back to Pinterest and click %1$s. That should be it!"
+msgstr ""
+
+#: pinterest-verify/views/admin.php:79
+msgid "Complete Verification"
 msgstr ""
