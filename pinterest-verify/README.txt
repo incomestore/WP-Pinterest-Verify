@@ -62,6 +62,10 @@ See the plugin settings page for further instructions.
 
 == Changelog ==
 
+= 1.0.3 =
+
+* Made i18n ready.
+
 = 1.0.2 =
 
 * Tested up to WordPress 4.0.
