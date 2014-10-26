@@ -21,7 +21,7 @@ class Pinterest_Verify {
 	 *
 	 * @var     string
 	 */
-	protected $version = '1.0.3';
+	protected $version = '1.0.2';
 
 	/**
 	 * Unique identifier for your plugin.
