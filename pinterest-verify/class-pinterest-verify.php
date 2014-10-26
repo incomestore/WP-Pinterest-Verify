@@ -92,11 +92,14 @@ class Pinterest_Verify {
 	public function check_wp_version() {
 		global $wp_version;
 		$required_wp_version = '3.5.2';
+		$plugins_link = '<a href="' . get_admin_url( '', 'plugins.php' ) . '">' . __( 'Return to Plugins', 'pvr' ) . '</a>.';
 		
 		if ( version_compare( $wp_version, $required_wp_version, '<' ) ) {
 			deactivate_plugins( PVR_MAIN_FILE ); 
-			wp_die( sprintf( __( $this->get_plugin_title() . ' requires WordPress version <strong>' . $required_wp_version . '</strong> to run properly. ' .
-				'Please update WordPress before reactivating this plugin. <a href="%s">Return to Plugins</a>.', 'pvr' ), get_admin_url( '', 'plugins.php' ) ) );
+
+			/* translators: %3$s is a link back to the plugins page */
+			wp_die( sprintf( __( '%1$s requires WordPress version %2$s to run properly. Please update WordPress before reactivating this plugin. %3$s', 'pvr' ), 
+					$this->get_plugin_title(), $required_wp_version,  $plugins_link ) );
 		}
 	}
 
@@ -151,7 +154,7 @@ class Pinterest_Verify {
 	public function add_plugin_admin_menu() {
 
 		$this->plugin_screen_hook_suffix = add_options_page(
-			$this->get_plugin_title() . __( ' Settings', 'pvr' ),
+			sprintf( __( '%1$s Settings', 'pvr' ), $this->get_plugin_title() ),
 			__( 'Pinterest Verify', 'pvr' ),
 			'manage_options',
 			$this->plugin_slug,

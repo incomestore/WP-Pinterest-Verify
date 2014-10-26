@@ -25,9 +25,7 @@ function pvr_register_settings() {
 			'verification_code' => array(
 				'id' => 'verification_code',
 				'name' => __( 'Pinterest Verification Code', 'pvr' ),
-				'desc' => __( 'This is your website\'s unique 32-character code. It is the code shown within ', 'pvr' ) .
-					'<code>content=""</code>' .
-					__( ' inside the meta tag given to you.', 'pvr' ),
+				'desc' => sprintf( __( 'This is your website\'s unique 32-character code. It is the code shown within %1$s inside the meta tag given to you.', 'pvr' ), '<code>content=""</code>' ),
 				'type' => 'text'
 			)
 		)
@@ -135,7 +133,7 @@ function pvr_settings_sanitize( $input ) {
  * @since 1.0.0
  */
 function pvr_missing_callback( $args ) {
-	printf( __( 'The callback function used for the <strong>%s</strong> setting is missing.', 'pvr' ), $args['id'] );
+	printf( __( 'The callback function used for the %1$s setting is missing.', 'pvr' ), '<strong>' . $args['id'] . '</strong>' );
 }
 
 /*

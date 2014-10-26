@@ -48,23 +48,36 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- TODO localize, add image borders -->
 
 			<p>
-				<?php _e( '1. Go to Pinterest\'s', 'pvr' ); ?>
-				<strong><a href="http://business.pinterest.com/verify/" target="_blank"><?php _e( 'Verify Your Website', 'pvr' ); ?></a></strong>
-				<?php _e( 'and complete steps 1 and 2.', 'pvr' ); ?>
+				<?php
+					printf( __( '1. Go to Pinterest\'s %1$s and complete steps 1 and 2.', 'pvr' ), 
+							'<strong><a href="http://business.pinterest.com/verify/" target="_blank">' . __( 'Verify Your Website', 'pvr' ) . '</a></strong>' );
+				?>
 			</p>
 			<p>
-				<?php _e( '2. Next click <strong>Verify with a meta tag</strong> at the bottom of this popup.', 'pvr' ); ?><br/>
+				<?php
+					printf( __( '2. Next click %1$s at the bottom of this popup.', 'pvr' ), '<strong>' . __( 'Verify with a meta tag', 'pvr' ) . '</strong>' );
+				?>
+				<br/>
 				<img class="pvr-screenshot" src="<?php echo PVR_PLUGIN_URL . 'assets/pinterest-verify-1.png'; ?>" />
 			</p>
 			<p>
-				<?php _e( '3. Now select the 32-character unique code within the quotes in <code>content=""</code> and copy.', 'pvr' ); ?><br/>
+				<?php
+					printf( __( '3. Now select the 32-character unique code within the quotes in %1$s and copy.', 'pvr' ), '<code>content=""</code>' );
+				?>
+				<br/>
 				<img class="pvr-screenshot" src="<?php echo PVR_PLUGIN_URL . 'assets/pinterest-verify-2.png'; ?>" />
 			</p>
 			<p>
-				<?php _e( '4. Come back to this settings page and paste the 32-character code into the textbox above, then click <strong>Save Changes</strong>.', 'pvr' ); ?>
+				<?php
+					printf( __( '4. Come back to this settings page and paste the 32-character code into the textbox above, then click %1$s.', 'pvr' ), 
+							'<strong>' . __( 'Save Changes', 'pvr' ) . '</strong>' ); 
+				?>
 			</p>
 			<p>
-				<?php _e( '5. Finally, go back to Pinterest and click <strong>Complete Verification</strong>. That should be it!', 'pvr' ); ?>
+				<?php
+					printf( __( '5. Finally, go back to Pinterest and click %1$s. That should be it!', 'pvr' ), 
+							'<strong>' . __( 'Complete Verification', 'pvr' ) . '</strong>' );
+				?>
 			</p>
 
 		</div><!-- #pvr-settings-content -->
