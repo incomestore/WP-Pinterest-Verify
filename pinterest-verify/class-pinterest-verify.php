@@ -61,6 +61,9 @@ class Pinterest_Verify {
 	private function __construct() {
 		// Setup constants.
 		$this->setup_constants();
+		
+		// Load plugin text domain
+		add_action( 'plugins_loaded', array( $this, 'plugin_textdomain' ) );
 
 		// Include required files.
 		add_action( 'init', array( $this, 'includes' ), 1 );
@@ -270,5 +273,16 @@ class Pinterest_Verify {
 		// At this point show install notice. Show it only on the plugin screen.
 		if( get_current_screen()->id == 'plugins' )
 			include_once( 'views/admin-install-notice.php' );
+	}
+	
+	/**
+	 * Loads plugin text domain for i18n
+	 */
+	function plugin_textdomain() {
+		load_plugin_textdomain(
+			'pvr',
+			false,
+			dirname( plugin_basename( PVR_MAIN_FILE ) ) . '/languages/'
+		);
 	}
 }
