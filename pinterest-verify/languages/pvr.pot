@@ -1,0 +1,189 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pinterest Verify\n"
+"POT-Creation-Date: 2014-10-26 11:35-0700\n"
+"PO-Revision-Date: 2014-10-26 11:35-0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: pinterest-verify\n"
+
+#: pinterest-verify/class-pinterest-verify.php:98
+msgid " requires WordPress version <strong>"
+msgstr ""
+
+#: pinterest-verify/class-pinterest-verify.php:154
+msgid " Settings"
+msgstr ""
+
+#: pinterest-verify/class-pinterest-verify.php:155
+#: pinterest-verify/class-pinterest-verify.php:202
+msgid "Pinterest Verify"
+msgstr ""
+
+#: pinterest-verify/class-pinterest-verify.php:230
+msgid "Settings"
+msgstr ""
+
+#: pinterest-verify/includes/misc-functions.php:65
+msgid "No items."
+msgstr ""
+
+#: pinterest-verify/includes/register-settings.php:27
+msgid "Pinterest Verification Code"
+msgstr ""
+
+#: pinterest-verify/includes/register-settings.php:28
+msgid ""
+"This is your website's unique 32-character code. It is the code shown within "
+msgstr ""
+
+#: pinterest-verify/includes/register-settings.php:30
+msgid " inside the meta tag given to you."
+msgstr ""
+
+#: pinterest-verify/includes/register-settings.php:128
+msgid "Settings Updated"
+msgstr ""
+
+#: pinterest-verify/includes/register-settings.php:138
+#, php-format
+msgid ""
+"The callback function used for the <strong>%s</strong> setting is missing."
+msgstr ""
+
+#: pinterest-verify/views/admin-install-notice.php:27
+msgid " is now installed."
+msgstr ""
+
+#: pinterest-verify/views/admin-install-notice.php:28
+msgid "Setup Pinterest Verification Now"
+msgstr ""
+
+#: pinterest-verify/views/admin-install-notice.php:29
+msgid "Hide this"
+msgstr ""
+
+#: pinterest-verify/views/admin-sidebar.php:23
+msgid "Need an awesome \"Pin It\" button?"
+msgstr ""
+
+#: pinterest-verify/views/admin-sidebar.php:27
+msgid "Add \"Pin It\" buttons on image hover"
+msgstr ""
+
+#: pinterest-verify/views/admin-sidebar.php:28
+msgid "Add \"Pin It\" buttons under images"
+msgstr ""
+
+#: pinterest-verify/views/admin-sidebar.php:29
+msgid "30 custom \"Pin It\" button designs"
+msgstr ""
+
+#: pinterest-verify/views/admin-sidebar.php:30
+msgid "Upload your own button designs"
+msgstr ""
+
+#: pinterest-verify/views/admin-sidebar.php:31
+msgid "Twitter, Facebook & G+ buttons"
+msgstr ""
+
+#: pinterest-verify/views/admin-sidebar.php:32
+msgid "Use with featured images"
+msgstr ""
+
+#: pinterest-verify/views/admin-sidebar.php:33
+msgid "Use with custom post types"
+msgstr ""
+
+#: pinterest-verify/views/admin-sidebar.php:35
+msgid "Automatic updates & email support"
+msgstr ""
+
+#: pinterest-verify/views/admin-sidebar.php:39
+msgid "Get all of these and more with Pinterest \"Pin It\" Button Pro!"
+msgstr ""
+
+#: pinterest-verify/views/admin-sidebar.php:45
+msgid "Get \"Pin It\" Pro Now"
+msgstr ""
+
+#: pinterest-verify/views/admin-sidebar.php:58
+msgid "Now accepting 5-star reviews! It only takes seconds and means a lot."
+msgstr ""
+
+#: pinterest-verify/views/admin-sidebar.php:62
+msgid "Rate this Plugin Now"
+msgstr ""
+
+#: pinterest-verify/views/admin-sidebar.php:75
+msgid "Community Support Forums"
+msgstr ""
+
+#: pinterest-verify/views/admin-sidebar.php:84
+msgid "Recent News from pinplugins.com"
+msgstr ""
+
+#: pinterest-verify/views/admin.php:27
+msgid ""
+"Copy and paste your verification code from Pinterest to include the proper "
+"meta tag on your front page. See screenshots below for further help."
+msgstr ""
+
+#: pinterest-verify/views/admin.php:30
+msgid ""
+"If you have any caching plugins or options running make sure those are "
+"cleared before verifying."
+msgstr ""
+
+#: pinterest-verify/views/admin.php:33
+msgid ""
+"At this point you should now be able to verify your site with Pinterest."
+msgstr ""
+
+#: pinterest-verify/views/admin.php:46
+msgid "Step by Step Verification Instructions"
+msgstr ""
+
+#: pinterest-verify/views/admin.php:51
+msgid "1. Go to Pinterest's"
+msgstr ""
+
+#: pinterest-verify/views/admin.php:52
+msgid "Verify Your Website"
+msgstr ""
+
+#: pinterest-verify/views/admin.php:53
+msgid "and complete steps 1 and 2."
+msgstr ""
+
+#: pinterest-verify/views/admin.php:56
+msgid ""
+"2. Next click <strong>Verify with a meta tag</strong> at the bottom of this "
+"popup."
+msgstr ""
+
+#: pinterest-verify/views/admin.php:60
+msgid ""
+"3. Now select the 32-character unique code within the quotes in "
+"<code>content=\"\"</code> and copy."
+msgstr ""
+
+#: pinterest-verify/views/admin.php:64
+msgid ""
+"4. Come back to this settings page and paste the 32-character code into the "
+"textbox above, then click <strong>Save Changes</strong>."
+msgstr ""
+
+#: pinterest-verify/views/admin.php:67
+msgid ""
+"5. Finally, go back to Pinterest and click <strong>Complete Verification</"
+"strong>. That should be it!"
+msgstr ""
