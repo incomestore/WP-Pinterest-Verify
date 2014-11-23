@@ -1,8 +1,8 @@
 === Pinterest Verify ===
 Contributors: pderksen, nickyoung87
 Tags: pinterest, pinterest verify, pinterest verification, meta tag, verify, verification
-Requires at least: 3.7.4
-Tested up to: 4.0
+Requires at least: 3.8.5
+Tested up to: 4.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -64,6 +64,7 @@ See the plugin settings page for further instructions.
 
 = 1.0.3 =
 
+* Tested with WordPress 4.1.
 * Made i18n ready.
 
 = 1.0.2 =
