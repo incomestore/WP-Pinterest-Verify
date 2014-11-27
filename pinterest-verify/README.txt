@@ -64,8 +64,8 @@ See the plugin settings page for further instructions.
 
 = 1.0.3 =
 
-* Tested with WordPress 4.1.
-* Made i18n ready.
+* Tested up to WordPress 4.1.
+* Improved translation (i18n) readiness.
 
 = 1.0.2 =
 
