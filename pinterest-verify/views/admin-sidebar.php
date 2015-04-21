@@ -55,11 +55,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div class="postbox">
 		<div class="inside">
 			<p>
-				<?php _e( 'Now accepting 5-star reviews! It only takes seconds and means a lot.', 'pvr' ); ?>
+				<?php _e( 'Your review helps more folks find our plugin. Thanks so much!', 'pvr' ); ?>
 			</p>
 			<div class="centered">
-				<a href="http://wordpress.org/support/view/plugin-reviews/pinterest-verify" class="button-primary" target="_blank">
-					<?php _e( 'Rate this Plugin Now', 'pvr' ); ?></a>
+				<a href="https://wordpress.org/support/view/plugin-reviews/pinterest-verify#postform" class="button-primary" target="_blank">
+					<?php _e( 'Review this Plugin Now', 'pvr' ); ?></a>
 			</div>
 		</div>
 	</div>
@@ -71,8 +71,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<ul>
 				<li>
 					<div class="dashicons dashicons-arrow-right-alt2"></div>
-					<a href="http://wordpress.org/support/plugin/pinterest-verify" target="_blank">
-						<?php _e( 'Community Support Forums', 'pvr' ); ?></a>
+					<a href="https://wordpress.org/support/plugin/pinterest-verify" target="_blank">
+						<?php _e( 'Community support forums', 'pvr' ); ?></a>
 				</li>
 			</ul>
 		</div>
