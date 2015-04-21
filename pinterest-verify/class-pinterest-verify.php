@@ -131,7 +131,7 @@ class Pinterest_Verify {
 			define( 'PVR_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 		}
 		
-		if( ! defined( 'PINPLUGIN_BASE_URL' ) ) {
+		if ( ! defined( 'PINPLUGIN_BASE_URL' ) ) {
 			define( 'PINPLUGIN_BASE_URL', 'http://pinplugins.com/' );
 		}
 	}

@@ -19,7 +19,7 @@ Now pinners will see the verification checkmark AND grant you access to Pinteres
 
 That's all there is to it!
 
-[Follow this project on Github](https://github.com/pderksen/WP-Pinterest-Verify).
+[Follow this project on Github](https://github.com/pderksen/WP-Pinterest-Verify)
 
 == Installation ==
 
