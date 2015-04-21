@@ -62,8 +62,9 @@ See the plugin settings page for further instructions.
 
 == Changelog ==
 
-= 1.0.4 =
+= 1.0.4 - April 21, 2015 =
 
+* Updated calls to add_query_arg to prevent any possible XSS attacks.
 * Tested up to WordPress 4.2.
 
 = 1.0.3 =
