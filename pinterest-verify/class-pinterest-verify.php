@@ -230,7 +230,7 @@ class Pinterest_Verify {
 	 */
 	public function settings_link( $links ) {
 
-		$setting_link = sprintf( '<a href="%s">%s</a>', add_query_arg( 'page', $this->plugin_slug, admin_url( 'options-general.php' ) ), __( 'Settings', 'pvr' ) );
+		$setting_link = sprintf( '<a href="%s">%s</a>', esc_url( add_query_arg( 'page', $this->plugin_slug, admin_url( 'options-general.php' ) ) ), __( 'Settings', 'pvr' ) );
 		array_unshift( $links, $setting_link );
 
 		return $links;
