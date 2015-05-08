@@ -1,7 +1,7 @@
 === Pinterest Verify ===
 Contributors: pderksen, nickyoung87
 Tags: pinterest, pinterest verify, pinterest verification, meta tag, verify, verification
-Requires at least: 3.9.3
+Requires at least: 3.9
 Tested up to: 4.2
 Stable tag: 1.0.4
 License: GPLv2 or later
